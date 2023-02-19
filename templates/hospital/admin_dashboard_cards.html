@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  /* Center the content vertically and horizontally */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Add margin to each market update box */
+.market-update-gd {
+  margin: 10px;
+}
+
+/* Style the left section of each market update box */
+.market-update-left {
+  text-align: center;
+}
+
+.market-update-left h3 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.market-update-left h4 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.market-update-left p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* Style the right section of each market update box */
+.market-update-right {
+  font-size: 60px;
+  color: white;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add color to each market update box */
+.clr-block-1 {
+  background-color: #64b5f6;
+}
+
+.clr-block-2 {
+  background-color: #81c784;
+}
+
+.clr-block-3 {
+  background-color: #fdd835;
+}
+
+/* Remove underline from link */
+a {
+  text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body>
+  <div class="market-updates">
+    <a href="/admin-approve-doctor"><div class="col-md-4 market-update-gd">
+      <div class="market-update-block clr-block-1">
+        <div class="col-md-8 market-update-left">
+          <h3>{{doctorcount}}</h3>
+          <h4>Total Doctor</h4>
+          <p>Approval Required : {{pendingdoctorcount}}</p>
+        </div>
+        <div class="col-md-4 market-update-right">
+          <i class="fa fa-user-md"></i>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  </a>
+    <a href="/admin-approve-patient"><div class="col-md-4 market-update-gd">
+      <div class="market-update-block clr-block-2">
+        <div class="col-md-8 market-update-left">
+          <h3>{{patientcount}}</h3>
+          <h4>Total Patient</h4>
+          <p>Wants to Admit : {{pendingpatientcount}}</p>
+        </div>
+        <div class="col-md-4 market-update-right">
+          <i class="fa fa-user-o"></i>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  </a>
+    <a href="/admin-view-appointment"><div class="col-md-4 market-update-gd">
+      <div class="market-update-block clr-block-3">
+        <div class="col-md-8 market-update-left">
+          <h3>{{appointmentcount}}</h3>
+          <h4>Total Appointment</h4>
+          <p>Approve Appointments :{{pendingappointmentcount}} </p>
+        </div>
+        <div class="col-md-4 market-update-right">
+          <i class="fa fa-calendar"> </i>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</a>
+</body>
+
+
+</html>

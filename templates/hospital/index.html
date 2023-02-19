@@ -1,0 +1,60 @@
+{% extends 'hospital/homebase.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+<head>
+<style>
+  /* Apply custom styles to the jumbotron */
+.jumbotron {
+  background-color: #3f51b5;
+  color: #fff;
+  text-align: center;
+}
+
+/* Apply custom styles to the "Emergency?" heading */
+h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ff5252;
+  text-shadow: 2px 2px #000;
+}
+
+/* Apply custom styles to the "Take Appointment Now!" button */
+.btn-danger {
+  background-color: #ff5252;
+  border-color: #ff5252;
+}
+
+.btn-danger:hover {
+  background-color: #ff1744;
+  border-color: #ff1744;
+}
+
+</style>
+</head>
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+  <br>
+  <h5 class="display-3 glow">Hospital Management System</h5>
+  <br><br><br><br><br>
+  <p>
+  <h3>Emergency ?</h3>
+
+  <p class="lead">
+    <a class="btn btn-danger btn-lg" href="/patientclick" role="button">Take Appointment Now!</a>
+  </p>
+  <br><br>
+</div>
+
+<br><br><br><br>
+
+<br><br><br>
+
+
+{% endblock content %}
