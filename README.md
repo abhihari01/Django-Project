@@ -11,5 +11,6 @@ To run the code:
   
   Database required:
     Sqllite
-    
+  
+  Create one superuser in shell to create one admin
    
