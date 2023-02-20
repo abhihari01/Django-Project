@@ -6,8 +6,9 @@ To run the code:
   
   Create Virtual environment
   
-  Install widget-tweaks by below code
-    pip install django-widget-tweaks
+  Install widget-tweaks and pillow by below codes
+  pip install django-widget-tweaks
+  pip install pillow
   
   Database required:
     Sqllite
