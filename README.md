@@ -13,5 +13,5 @@ To run the code:
   Database required:
     Sqllite
   
-  Create one superuser in shell to create one admin
+  To access admin interface create one admin in admin signup page
    
